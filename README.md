@@ -17,6 +17,7 @@
 ## 📌 Table of Contents
 - [📖 Executive Overview](#-executive-overview)
 - [🚨 The Problem & PRISM Solution](#-the-problem--prism-solution)
+- [🛠️ Technology Stack Breakdown](#️-technology-stack-breakdown)
 - [📊 Datasets & Monitored Footprint](#-datasets--monitored-footprint)
 - [⚡ Key Modules & Platform Features](#-key-modules--platform-features)
 - [🏗️ System Architecture](#️-system-architecture)
@@ -44,6 +45,23 @@ PRISM automates project oversight across **2,048 central sector infrastructure p
 | **Delayed Overrun Warnings** discovered after budget exhaustions | **AI Early Warning Radar & Risk Scoring** predicting delay likelihood months in advance. |
 | **Static Monthly PDF Reports** requiring manual aggregation | **Interactive Real-Time Dashboard** powered by April, May, and June 2026 MoSPI Flash Datasets. |
 | **Opaque State/UT Tracking** making localized bottlenecks hard to identify | **36 States & UTs Geo-Spatial Analytics** mapping expenditure and delay heatmaps. |
+
+---
+
+## 🛠️ Technology Stack Breakdown
+
+PRISM is built with a state-of-the-art **Vanilla Web Engine architecture** designed for high performance, instant page loads, offline resiliency, zero security vulnerabilities from third-party build packages (`node_modules`), and seamless deployment on secure government intranet networks.
+
+| Category | Technology / Library | Purpose & Implementation |
+| :--- | :--- | :--- |
+| **Markup & Structure** | **HTML5 (Semantic)** | Accessible, WAI-ARIA compliant layout with custom command palette modal, government header topbar, and reactive page container. |
+| **UI Design System** | **Vanilla CSS3** | High-fidelity dark/light mode engine, custom CSS variables (`--bg-primary`, `--accent-blue`), glassmorphism, responsive grid/flexbox layouts, and custom keyframe animations. |
+| **Core Client Engine** | **Vanilla JavaScript (ES6+)** | Modular architecture (`app.js`, `pages.js`, `charts.js`, `data.js`) handling dynamic client-side routing, toast alerts, state management, and user interactions with **Zero Build Overhead**. |
+| **Analytics & Data Viz** | **Chart.js v4.4.0** | High-performance interactive visual charts (Doughnut charts, Multi-axis Line trends, Bar comparisons, and State performance metrics). |
+| **Typography** | **Google Fonts** | `Inter` (UI elements & metrics), `Outfit` (Headings & Government Titles), and `JetBrains Mono` (Data badges & Project IDs). |
+| **Data Engine** | **Normalized In-Memory JSON** | Ingested April, May, and June 2026 MoSPI Flash Datasets with live project filtering, state aggregation, and local storage persistence. |
+| **Print & Audit Engine** | **Native Browser Print API** | Clean, formatted CSS `@media print` rules for generating official PDF Flash Audit Reports without third-party PDF generators. |
+| **Deployment** | **Static Web Architecture** | Compatible with GitHub Pages, Vercel, Netlify, Apache, Nginx, and IIS intranet web servers. |
 
 ---
 
