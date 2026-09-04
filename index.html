@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRISM — Unified Infrastructure Monitoring Platform (MoSPI CUF)</title>
+  <meta name="description"
+    content="PRISM: AI-powered Predictive Analytics, CUF Common Upload Form & Project Expenditure Tracker for Central Sector Infrastructure Projects (MoSPI IPMD)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+  <!-- Animated Background Grid & Orbs -->
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- OFFICIAL GOVERNMENT OF INDIA TOPSIDE BANNER -->
+  <header class="gov-banner" id="govBanner">
+    <div class="gov-main-header">
+      <div class="gov-header-left">
+
+
+        <div class="gov-titles">
+          <div class="gov-main-title" style="font-size:26px;font-weight:900;line-height:1.15;letter-spacing:0.4px;">Ministry of Statistics and</div>
+          <div class="gov-main-title" style="font-size:26px;font-weight:900;line-height:1.15;letter-spacing:0.4px;">Programme Implementation</div>
+        </div>
+      </div>
+
+      <!-- PROMINENT ENLARGED QUICK SEARCH BAR -->
+      <div class="gov-header-search-bar" onclick="openCmdPalette()" title="Enlarged Global Quick Search (Ctrl + K)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="gh-search-icon">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span class="gh-search-placeholder">Quick Search 2,048 Projects by ID, Name, State, Sector, Ministry...</span>
+        <kbd class="gh-search-kbd">Ctrl + K</kbd>
+      </div>
+
+      <div class="gov-header-right">
+        <!-- OFFICIAL MoSPI CIRCULAR EMBLEM SEAL LOGO (Matching Image 2) -->
+        <div class="mospi-logo-wrap" title="Ministry of Statistics and Programme Implementation Official Logo">
+          <svg viewBox="0 0 180 95" class="mospi-logo-svg">
+            <g>
+              <!-- Outer Circular Boundary with Statistical Symbols (i, Σ, μ, σ, x̄, P) -->
+              <circle cx="90" cy="40" r="32" fill="#ffffff" stroke="#002B7F" stroke-width="2.5"/>
+              <circle cx="90" cy="40" r="28" fill="none" stroke="#002B7F" stroke-width="1" stroke-dasharray="2,2"/>
+              
+              <!-- Statistical Symbols Ring -->
+              <text x="70" y="18" font-family="'Inter', sans-serif" font-size="8" font-style="italic" font-weight="700" fill="#002B7F">i</text>
+              <text x="83" y="15" font-family="'Inter', sans-serif" font-size="9" font-weight="800" fill="#002B7F">&Sigma;</text>
+              <text x="96" y="16" font-family="'Inter', sans-serif" font-size="8" stroke="#002B7F" fill="#002B7F">&mu;</text>
+              <text x="108" y="22" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#002B7F">&sigma;</text>
+              <text x="63" y="27" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#002B7F">x&#772;</text>
+              <text x="114" y="32" font-family="'Inter', sans-serif" font-size="8" font-weight="800" fill="#002B7F">P</text>
+
+              <!-- Central Ashoka Chakra Wheel -->
+              <circle cx="90" cy="38" r="17" fill="none" stroke="#002B7F" stroke-width="2"/>
+              <circle cx="90" cy="38" r="4" fill="#002B7F"/>
+              <!-- ₹ Rupee Symbol in Center Hub -->
+              <text x="90" y="41.5" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="900" font-size="9" fill="#ffffff">&#8377;</text>
+
+              <!-- 24 Spokes -->
+              <g stroke="#002B7F" stroke-width="0.9" opacity="0.85">
+                <line x1="90" y1="21" x2="90" y2="55"/>
+                <line x1="73" y1="38" x2="107" y2="38"/>
+                <line x1="78" y1="26" x2="102" y2="50"/>
+                <line x1="78" y1="50" x2="102" y2="26"/>
+                <line x1="81.5" y1="22.5" x2="98.5" y2="53.5"/>
+                <line x1="81.5" y1="53.5" x2="98.5" y2="22.5"/>
+              </g>
+
+              <!-- Ascending Bar Chart Curve in Orange along bottom of circle -->
+              <path d="M68 48 Q 90 62 112 40" stroke="#ea580c" stroke-width="2.5" fill="none"/>
+              <rect x="74" y="49" width="3" height="6" fill="#f97316"/>
+              <rect x="79" y="47" width="3" height="8" fill="#f97316"/>
+              <rect x="84" y="45" width="3" height="10" fill="#f97316"/>
+              <rect x="89" y="43" width="3" height="12" fill="#ea580c"/>
+              <rect x="94" y="40" width="3" height="15" fill="#ea580c"/>
+              <rect x="99" y="37" width="3" height="18" fill="#c2410c"/>
+              <rect x="104" y="34" width="3" height="21" fill="#c2410c"/>
+
+              <!-- Green Leaf Wings Flanking Bottom Left & Right -->
+              <path d="M52 50 C 62 48, 72 58, 66 66 C 54 66, 48 58, 52 50 Z" fill="#059669"/>
+              <path d="M128 50 C 118 48, 108 58, 114 66 C 126 66, 132 58, 128 50 Z" fill="#059669"/>
+
+              <!-- Motto Text Below Leaf Wings -->
+              <text x="90" y="78" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="900" font-size="9" fill="#002B7F" letter-spacing="0.8">DATA FOR DEVELOPMENT</text>
+              <text x="90" y="88" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="7.5" fill="#059669" letter-spacing="0.4">विकास के लिए आंकड़े</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo-wrap">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 4L36 13V27L20 36L4 27V13L20 4Z" fill="url(#logoGrad)" opacity="0.9" />
+            <path d="M20 10L30 15.5V26.5L20 32L10 26.5V15.5L20 10Z" fill="none" stroke="url(#strokeGrad)"
+              stroke-width="1.5" />
+            <circle cx="20" cy="21" r="4" fill="white" opacity="0.9" />
+            <defs>
+              <linearGradient id="logoGrad" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366f1" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+              <linearGradient id="strokeGrad" x1="10" y1="10" x2="30" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#a5b4fc" />
+                <stop offset="1" stop-color="#67e8f9" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <div class="logo-text">PRISM <span class="logo-ai">VISHLESHAN</span></div>
+          <div class="logo-sub">MoSPI Project Monitoring System</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-section-label">OVERVIEW</div>
+    <ul class="nav-list">
+      <li class="nav-item active" data-page="dashboard" onclick="navigateTo('dashboard')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="3" width="7" height="7" rx="1" fill="currentColor" />
+          <rect x="14" y="3" width="7" height="7" rx="1" fill="currentColor" opacity="0.6" />
+          <rect x="3" y="14" width="7" height="7" rx="1" fill="currentColor" opacity="0.6" />
+          <rect x="14" y="14" width="7" height="7" rx="1" fill="currentColor" />
+        </svg>
+        <span>Dashboard</span>
+        <div class="nav-badge">Live</div>
+      </li>
+      <li class="nav-item" data-page="projects" onclick="navigateTo('projects')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span>Project Registry</span>
+      </li>
+      <li class="nav-item" data-page="statereports" onclick="navigateTo('statereports')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor"
+            stroke-width="2" />
+          <circle cx="12" cy="9" r="2.5" fill="currentColor" />
+        </svg>
+        <span>State-Wise Analytics</span>
+        <div class="nav-badge success">States & UTs</div>
+      </li>
+      <li class="nav-item" data-page="addproject" onclick="navigateTo('addproject')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+          <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2" />
+          <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" />
+        </svg>
+        <span>Add & Log Cost</span>
+        <div class="nav-badge success">+ New</div>
+      </li>
+    </ul>
+
+    <div class="nav-section-label">AI ANALYTICS & REPORTS</div>
+    <ul class="nav-list">
+      <li class="nav-item" data-page="report" onclick="navigateTo('report')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2" />
+          <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="2" />
+          <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" />
+          <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" />
+        </svg>
+        <span>Official Audit Report</span>
+        <div class="nav-badge success">PDF Output</div>
+      </li>
+      <li class="nav-item" data-page="prediction" onclick="navigateTo('prediction')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span>Prediction Engine</span>
+      </li>
+      <li class="nav-item" data-page="risk" onclick="navigateTo('risk')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 03-3.42 0z"
+            stroke="currentColor" stroke-width="2" />
+          <line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span>Risk Scoring</span>
+        <div class="nav-badge danger" id="criticalBadge">28</div>
+      </li>
+      <li class="nav-item" data-page="earlywarning" onclick="navigateTo('earlywarning')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Early Warning</span>
+      </li>
+      <li class="nav-item" data-page="llm" onclick="navigateTo('llm')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2"
+            stroke-linejoin="round" />
+        </svg>
+        <span>AI Assistant</span>
+      </li>
+    </ul>
+
+    <div class="nav-section-label">INSIGHTS</div>
+    <ul class="nav-list">
+      <li class="nav-item" data-page="benchmarking" onclick="navigateTo('benchmarking')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Benchmarking</span>
+      </li>
+      <li class="nav-item" data-page="drivers" onclick="navigateTo('drivers')">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+          <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <span>Driver Analysis</span>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <div class="status-dot"></div>
+      <span>System Online · June 2026 Data</span>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content" id="mainContent">
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-toggle" onclick="toggleSidebar()">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="page-breadcrumb" id="breadcrumb">Dashboard / Overview</div>
+      </div>
+      <div class="topbar-right">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Toggle Light / Dark Mode">
+          <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="themeToggleText">Dark Mode</span>
+        </button>
+
+        <div class="data-freshness">
+          <div class="pulse-dot"></div>
+          <span>Report: June 2026</span>
+        </div>
+        <div class="topbar-stat">
+          <span class="ts-label">Projects</span>
+          <span class="ts-value" id="topbarProjectCount">2,048</span>
+        </div>
+        <div class="topbar-stat">
+          <span class="ts-label">Portfolio</span>
+          <span class="ts-value" id="topbarPortfolioVal">₹44.10L Cr</span>
+        </div>
+        <button class="btn-export" onclick="navigateTo('report')">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Export Report
+        </button>
+      </div>
+    </header>
+
+    <!-- PAGE CONTAINER -->
+    <div class="page-container" id="pageContainer">
+      <!-- Pages injected by JS -->
+    </div>
+  </main>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- EFFICIENCY COMMAND PALETTE MODAL (CTRL+K) -->
+  <div class="cmd-palette-backdrop" id="cmdPalette" onclick="closeCmdPalette(event)">
+    <div class="cmd-palette-modal" onclick="event.stopPropagation()">
+      <div class="cmd-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="cmd-search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="cmd-input" id="cmdInput" placeholder="Search project ID, name, state, sector or command... (Press Esc to exit)" oninput="handleCmdInput()" />
+        <span class="cmd-esc-badge">ESC</span>
+      </div>
+
+      <div class="cmd-results" id="cmdResults">
+        <div class="cmd-group-label">QUICK MODULE NAVIGATION</div>
+        <div class="cmd-item" onclick="execCmdNav('dashboard')">
+          <span class="cmd-icon">📊</span>
+          <div class="cmd-text"><strong>Executive Dashboard</strong><span>Multi-month portfolio overview</span></div>
+          <kbd>Alt 1</kbd>
+        </div>
+        <div class="cmd-item" onclick="execCmdNav('projects')">
+          <span class="cmd-icon">📁</span>
+          <div class="cmd-text"><strong>Project Registry</strong><span>Search & audit all 2,048 monitored projects</span></div>
+          <kbd>Alt 2</kbd>
+        </div>
+        <div class="cmd-item" onclick="execCmdNav('statereports')">
+          <span class="cmd-icon">📍</span>
+          <div class="cmd-text"><strong>State-Wise Analytics</strong><span>36 States & UTs expenditure breakdown</span></div>
+          <kbd>Alt 3</kbd>
+        </div>
+        <div class="cmd-item" onclick="execCmdNav('addproject')">
+          <span class="cmd-icon">➕</span>
+          <div class="cmd-text"><strong>Add Project / CUF Entry</strong><span>MoSPI Common Upload Form & Milestone tracker</span></div>
+          <kbd>Alt 4</kbd>
+        </div>
+        <div class="cmd-item" onclick="execCmdNav('risk')">
+          <span class="cmd-icon">⚠️</span>
+          <div class="cmd-text"><strong>AI Risk Scoring</strong><span>Critical flags & ministry scorecards</span></div>
+          <kbd>Alt 5</kbd>
+        </div>
+        <div class="cmd-item" onclick="execCmdNav('report')">
+          <span class="cmd-icon">🖨️</span>
+          <div class="cmd-text"><strong>Official Flash Report (PDF)</strong><span>Generate & print official MoSPI report</span></div>
+          <kbd>Alt 6</kbd>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js?v=3"></script>
+  <script src="js/charts.js?v=3"></script>
+  <script src="js/pages.js?v=3"></script>
+  <script src="js/app.js?v=3"></script>
+</body>
+
+</html>
